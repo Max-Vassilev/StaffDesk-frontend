@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding-top: 88px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body.dark {
@@ -9,7 +10,7 @@ body.dark {
 }
 
 body.light {
-  background: #e2e8f0;
+  background: #f3f4f6;
   color: #0f172a;
 }
 
@@ -17,9 +18,16 @@ body.light {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  padding: 120px 20px 80px;
+  padding: 80px 40px;
   max-width: 1200px;
-  margin: auto;
+  margin: 40px auto;
+  border-radius: 20px;
+  background: transparent;
+}
+
+body.light .hero {
+  background: #374151;
+  color: #f9fafb;
 }
 
 .hero-left {
@@ -42,8 +50,17 @@ body.light {
   color: transparent;
 }
 
+body.light .hero-left h1 {
+  color: #f9fafb;
+  background: none;
+}
+
 .hero-left p {
   color: #64748b;
+}
+
+body.light .hero-left p {
+  color: #d1d5db;
 }
 
 .hero-actions {
@@ -60,6 +77,7 @@ body.light {
   cursor: pointer;
   color: white;
   font-weight: 600;
+  font-family: inherit;
 }
 
 .cta-secondary {
@@ -69,6 +87,12 @@ body.light {
   border-radius: 10px;
   color: #e2e8f0;
   cursor: pointer;
+  font-family: inherit;
+}
+
+body.light .cta-secondary {
+  background: #4b5563;
+  color: #f9fafb;
 }
 
 .hero-right {
@@ -79,17 +103,24 @@ body.light {
 }
 
 .stat {
-  background: #0f172a;
+  background: #020617;
   padding: 20px;
   border-radius: 12px;
   border: 1px solid #1e293b;
 }
 
 .section {
-  padding: 100px 20px;
+  padding: 80px 40px;
   max-width: 1100px;
-  margin: auto;
+  margin: 40px auto;
   text-align: center;
+  border-radius: 20px;
+  background: transparent;
+}
+
+body.light .section {
+  background: #374151;
+  color: #f9fafb;
 }
 
 .text {
@@ -97,29 +128,45 @@ body.light {
   margin-bottom: 30px;
 }
 
+body.light .text {
+  color: #d1d5db;
+}
+
 .img {
   width: 100%;
-  max-width: 900px;
+  max-width: 700px;
+  height: 350px;
+  object-fit: cover;
   border-radius: 16px;
   box-shadow: 0 20px 50px rgba(0,0,0,0.4);
 }
 
 .pricing {
   display: flex;
-  gap: 80px;
+  gap: 60px;
   justify-content: center;
   flex-wrap: nowrap;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .card.large {
-  width: 420px;
-  padding: 50px;
-  border-radius: 24px;
+  width: 320px;
+  padding: 30px;
+  border-radius: 20px;
   text-align: left;
   border: 1px solid #1e293b;
-  background: #0b1220;
+  background: #020617;
   transition: 0.2s;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body.light .card.large {
+  background: #4b5563;
+  border: 1px solid #6b7280;
+  color: #f9fafb;
 }
 
 .card.large:hover {
@@ -127,99 +174,51 @@ body.light {
   border-color: #0ea5e9;
 }
 
+.price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
 .price {
-  font-size: 48px;
+  font-size: 34px;
   font-weight: 700;
-  margin: 24px 0;
 }
 
 .price span {
-  font-size: 18px;
+  font-size: 16px;
   color: #94a3b8;
+}
+
+body.light .price span {
+  color: #d1d5db;
 }
 
 .save {
   color: #0ea5e9;
-  margin-bottom: 12px;
+  font-size: 13px;
+  white-space: nowrap;
 }
 
 .card ul {
   list-style: none;
   padding: 0;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .card li {
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   color: #cbd5f5;
+}
+
+body.light .card li {
+  color: #e5e7eb;
 }
 
 .full {
   width: 100%;
-  margin-top: 30px;
-}
-
-.footer {
-  margin-top: 140px;
-  border-top: 1px solid #1e293b;
-  width: 100%;
-}
-
-.footer-inner {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 30px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 18px;
-  color: #94a3b8;
-}
-
-.footer-left {
-  text-align: left;
-}
-
-.footer-right {
-  display: flex;
-  gap: 40px;
-}
-
-.footer-right a {
-  cursor: pointer;
-}
-
-body.light .hero-left p,
-body.light .text {
-  color: #475569;
-}
-
-body.light .cta-secondary {
-  background: #cbd5f5;
-  color: #0f172a;
-}
-
-body.light .stat,
-body.light .card.large {
-  background: #e5e7eb;
-  border: 1px solid #cbd5f5;
-}
-
-body.light .card li {
-  color: #1e293b;
-}
-
-body.light .price span {
-  color: #64748b;
-}
-
-body.light .footer {
-  border-top: 1px solid #cbd5f5;
-}
-
-body.light .footer-inner {
-  color: #475569;
+  margin-top: auto;
 }
 
 @media (max-width: 900px) {
@@ -231,7 +230,7 @@ body.light .footer-inner {
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
-    padding: 120px 16px 60px;
+    padding: 60px 20px;
   }
 
   .hero-left h1 {

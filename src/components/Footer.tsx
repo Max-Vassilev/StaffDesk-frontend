@@ -1,16 +1,21 @@
+import './Footer.css'
+
 const Footer = () => {
   return (
-    <footer style={styles.footer}>
-      <p>© 2026 StaffDesk</p>
+    <footer className="footer">
+      <div className="footer-inner">
+        <div className="footer-left">
+          © 2026 StaffDesk
+        </div>
+
+        <div className="footer-right">
+          <a>Terms of Service</a>
+          <a>Privacy Policy</a>
+          <a>Contact</a>
+        </div>
+      </div>
     </footer>
   )
-}
-
-const styles = {
-  footer: {
-    padding: '20px',
-    textAlign: 'center' as const,
-  },
 }
 
 export default Footer
