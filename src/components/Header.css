@@ -50,8 +50,8 @@
 }
 
 .track {
-  width: 52px;
-  height: 26px;
+  width: 38px;
+  height: 18px;
   border-radius: 999px;
   background: #334155;
   border: 2px solid #22d3ee;
@@ -60,13 +60,14 @@
 }
 
 .thumb {
-  width: 20px;
-  height: 20px;
+  width: calc(100% / 2 - 4px);
+  height: calc(100% - 4px);
   background: #e2e8f0;
   border-radius: 50%;
   position: absolute;
-  top: 1px;
+  top: 50%;
   left: 2px;
+  transform: translateY(-50%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,8 +75,8 @@
 }
 
 .icon {
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background: #020617;
 }
@@ -86,7 +87,7 @@
 }
 
 .switch.dark .thumb {
-  left: 28px;
+  left: calc(100% - 2px - (100% / 2 - 4px));
 }
 
 .switch.light .icon {
@@ -95,7 +96,7 @@
 
 .switch.dark .icon {
   background: transparent;
-  box-shadow: -3px 0 0 0 #020617;
+  box-shadow: -2px 0 0 0 #020617;
 }
 
 body.light .header {

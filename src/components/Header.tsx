@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import './Header.css'
 
-const Header = () => {
-  const [dark, setDark] = useState(true)
+const Header: React.FC = () => {
+  const [dark, setDark] = useState<boolean>(true)
 
   useEffect(() => {
     document.body.className = dark ? 'dark' : 'light'

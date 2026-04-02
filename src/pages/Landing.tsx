@@ -61,7 +61,7 @@ const Landing = () => {
           <div className="card large">
             <h3>Monthly</h3>
             <div className="price-row">
-              <div className="price">$9 <span>/month</span></div>
+              <div className="price">€ 9 <span>/month</span></div>
             </div>
             <ul>
               <li>Employee tracking</li>
@@ -75,7 +75,7 @@ const Landing = () => {
           <div className="card large">
             <h3>Yearly</h3>
             <div className="price-row">
-              <div className="price">$90 <span>/year</span></div>
+              <div className="price">€ 90 <span>/year</span></div>
               <span className="save">17% cheaper</span>
             </div>
             <ul>

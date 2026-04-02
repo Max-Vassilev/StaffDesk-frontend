@@ -150,14 +150,14 @@ body.light .text {
 }
 
 .card.large {
-  width: 320px;
-  padding: 30px;
+  width: 300px;
+  padding: 24px;
   border-radius: 20px;
   text-align: left;
   border: 1px solid #1e293b;
   background: #020617;
   transition: 0.2s;
-  min-height: 400px;
+  min-height: 360px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -178,16 +178,16 @@ body.light .card.large {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 16px 0;
 }
 
 .price {
-  font-size: 34px;
+  font-size: 28px;
   font-weight: 700;
 }
 
 .price span {
-  font-size: 16px;
+  font-size: 14px;
   color: #94a3b8;
 }
 
@@ -197,18 +197,18 @@ body.light .price span {
 
 .save {
   color: #0ea5e9;
-  font-size: 13px;
+  font-size: 12px;
   white-space: nowrap;
 }
 
 .card ul {
   list-style: none;
   padding: 0;
-  margin: 20px 0;
+  margin: 16px 0;
 }
 
 .card li {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: #cbd5f5;
 }
 
@@ -219,6 +219,15 @@ body.light .card li {
 .full {
   width: 100%;
   margin-top: auto;
+}
+
+.pricing-section {
+  padding: 30px 40px 40px 40px;
+  margin: 0 auto 20px auto;
+}
+
+.pricing-section h2 {
+  margin: 10px 0 30px 0;
 }
 
 @media (max-width: 900px) {

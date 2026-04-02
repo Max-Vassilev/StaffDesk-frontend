@@ -1,11 +1,13 @@
 .footer {
-  padding: 24px 20px;
+  padding: 16px 0;
+  margin-top: -20px;
   border-top: 1px solid #1e293b;
 }
 
 .footer-inner {
-  max-width: 1200px;
-  margin: auto;
+  width: 100%;
+  padding: 0 24px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,6 +23,7 @@
 .footer-right {
   display: flex;
   gap: 20px;
+  justify-content: center;
 }
 
 .footer-right a {
@@ -45,6 +48,7 @@ body.light .footer {
   }
 
   .footer-right {
+    justify-content: flex-end;
     gap: 40px;
   }
 }
