@@ -10,8 +10,8 @@ body.dark {
 }
 
 body.light {
-  background: #f3f4f6;
-  color: #0f172a;
+  background: #e5eaf1;
+  color: #1e293b;
 }
 
 .hero {
@@ -26,8 +26,8 @@ body.light {
 }
 
 body.light .hero {
-  background: #374151;
-  color: #f9fafb;
+  background: transparent;
+  color: #1e293b;
 }
 
 .hero-left {
@@ -51,7 +51,7 @@ body.light .hero {
 }
 
 body.light .hero-left h1 {
-  color: #f9fafb;
+  color: #0b1220;
   background: none;
 }
 
@@ -60,7 +60,7 @@ body.light .hero-left h1 {
 }
 
 body.light .hero-left p {
-  color: #d1d5db;
+  color: #1e293b;
 }
 
 .hero-actions {
@@ -91,8 +91,8 @@ body.light .hero-left p {
 }
 
 body.light .cta-secondary {
-  background: #4b5563;
-  color: #f9fafb;
+  background: #bfc9d6;
+  color: #1e293b;
 }
 
 .hero-right {
@@ -109,6 +109,12 @@ body.light .cta-secondary {
   border: 1px solid #1e293b;
 }
 
+body.light .stat {
+  background: #bfc9d6;
+  border: 1px solid #8b97a8;
+  color: #0f172a;
+}
+
 .section {
   padding: 80px 40px;
   max-width: 1100px;
@@ -119,8 +125,8 @@ body.light .cta-secondary {
 }
 
 body.light .section {
-  background: #374151;
-  color: #f9fafb;
+  background: transparent;
+  color: #1e293b;
 }
 
 .text {
@@ -129,7 +135,7 @@ body.light .section {
 }
 
 body.light .text {
-  color: #d1d5db;
+  color: #475569;
 }
 
 .img {
@@ -164,9 +170,9 @@ body.light .text {
 }
 
 body.light .card.large {
-  background: #4b5563;
-  border: 1px solid #6b7280;
-  color: #f9fafb;
+  background: #bfc9d6;
+  border: 1px solid #8b97a8;
+  color: #1e293b;
 }
 
 .card.large:hover {
@@ -192,13 +198,17 @@ body.light .card.large {
 }
 
 body.light .price span {
-  color: #d1d5db;
+  color: #64748b;
 }
 
 .save {
   color: #0ea5e9;
   font-size: 12px;
   white-space: nowrap;
+}
+
+body.light .save {
+  color: #0284c7;
 }
 
 .card ul {
@@ -213,7 +223,7 @@ body.light .price span {
 }
 
 body.light .card li {
-  color: #e5e7eb;
+  color: #334155;
 }
 
 .full {

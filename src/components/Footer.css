@@ -31,9 +31,14 @@
 }
 
 body.light .footer {
-  background: #374151;
-  border-top: 1px solid #6b7280;
-  color: #e5e7eb;
+  background: #bfc9d6;
+  border-top: none;
+  box-shadow: 0 -2px 20px rgba(0,0,0,0.08);
+  color: #000000;
+}
+
+body.light .footer-inner {
+  color: #000000;
 }
 
 @media (min-width: 768px) {

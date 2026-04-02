@@ -100,12 +100,13 @@
 }
 
 body.light .header {
-  background: rgba(55, 65, 81, 0.95);
-  border-bottom: 1px solid #6b7280;
+  background: #bfc9d6;
+  border-bottom: none;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.08);
 }
 
 body.light .link {
-  color: #f9fafb;
+  color: #1e293b;
 }
 
 body.light .signup {
@@ -113,5 +114,5 @@ body.light .signup {
 }
 
 body.light .track {
-  background: #6b7280;
+  background: #8b97a8;
 }
