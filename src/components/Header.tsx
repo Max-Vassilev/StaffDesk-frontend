@@ -30,7 +30,9 @@ const Header: React.FC = () => {
           </div>
         </div>
 
-        <button className="signup">Sign Up</button>
+        <button className="signup" onClick={() => navigate('/signup')}>
+          Sign Up
+        </button>
       </div>
     </header>
   )
