@@ -1,17 +1,35 @@
 .contact {
   display: flex;
   justify-content: center;
-  padding: 120px 20px 60px;
+  align-items: center;
+  min-height: calc(100vh - 140px);
+  padding: 20px;
 }
 
 .contact-card {
   width: 100%;
   max-width: 500px;
-  background: #020617;
-  border: 1px solid #1e293b;
-  border-radius: 14px;
-  padding: 24px;
+  border-radius: 16px;
+  padding: 26px;
   text-align: center;
+  position: relative;
+}
+
+body.dark .contact-card {
+  background: #020617;
+  border: 1px solid rgba(56, 189, 248, 0.18);
+  box-shadow:
+    0 0 0 1px rgba(56, 189, 248, 0.08),
+    0 0 15px rgba(56, 189, 248, 0.12),
+    0 12px 30px rgba(0, 0, 0, 0.75);
+}
+
+body.light .contact-card {
+  background: #ffffff;
+  border: 1px solid rgba(2, 132, 199, 0.2);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08),
+    0 0 25px rgba(2, 132, 199, 0.2);
 }
 
 .contact-card h2 {
@@ -31,26 +49,57 @@
   text-align: left;
 }
 
+body.dark .form input,
+body.dark .form textarea {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  color: white;
+}
+
+body.light .form input,
+body.light .form textarea {
+  background: rgba(241, 245, 249, 0.9);
+  border: 1px solid rgba(15, 23, 42, 0.15);
+  color: #0f172a;
+}
+
 .form input,
 .form textarea {
-  background: transparent;
-  border: 1px solid #1e293b;
   border-radius: 10px;
   padding: 10px;
-  color: white;
   font-size: 14px;
+  transition: 0.2s;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+}
+
+body.dark .form input:focus,
+body.dark .form textarea:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.25);
+}
+
+body.light .form input:focus,
+body.light .form textarea:focus {
+  border-color: #0284c7;
+  box-shadow: 0 0 0 2px rgba(2, 132, 199, 0.2);
 }
 
 .form textarea {
   resize: none;
 }
 
-.form input:-webkit-autofill,
-.form input:-webkit-autofill:hover,
-.form input:-webkit-autofill:focus {
+.form input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px #020617 inset;
   -webkit-text-fill-color: white;
-  transition: background-color 5000s ease-in-out 0s;
+}
+
+body.light .form input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  -webkit-text-fill-color: #0f172a;
 }
 
 .bottom {
@@ -61,30 +110,17 @@
 }
 
 .bottom a {
-  color: #38bdf8;
   text-decoration: none;
 }
 
-.bottom a:hover {
-  text-decoration: underline;
-}
-
-body.light .contact-card {
-  background: white;
-}
-
-body.light .form input,
-body.light .form textarea {
-  color: black;
-}
-
-body.light .form input:-webkit-autofill,
-body.light .form input:-webkit-autofill:hover,
-body.light .form input:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0 1000px white inset;
-  -webkit-text-fill-color: black;
+body.dark .bottom a {
+  color: #38bdf8;
 }
 
 body.light .bottom a {
   color: #0284c7;
+}
+
+.bottom a:hover {
+  text-decoration: underline;
 }

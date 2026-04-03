@@ -3,11 +3,14 @@ import { useNavigate } from 'react-router-dom'
 import './Header.css'
 
 const Header: React.FC = () => {
-  const [dark, setDark] = useState<boolean>(true)
+  const [dark, setDark] = useState<boolean>(() => {
+    return localStorage.getItem('theme') === 'light' ? false : true
+  })
   const navigate = useNavigate()
 
   useEffect(() => {
     document.body.className = dark ? 'dark' : 'light'
+    localStorage.setItem('theme', dark ? 'dark' : 'light')
   }, [dark])
 
   return (
