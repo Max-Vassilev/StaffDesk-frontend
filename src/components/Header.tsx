@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Header.css'
 
 const Header: React.FC = () => {
   const [dark, setDark] = useState<boolean>(true)
+  const navigate = useNavigate()
 
   useEffect(() => {
     document.body.className = dark ? 'dark' : 'light'
@@ -10,7 +12,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="header">
-      <div className="logo">
+      <div className="logo" onClick={() => navigate('/')}>
         <h2>StaffDesk</h2>
       </div>
 

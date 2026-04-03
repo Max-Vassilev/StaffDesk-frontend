@@ -1,0 +1,90 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  padding: 120px 20px 60px;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 500px;
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+}
+
+.contact-card h2 {
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #94a3b8;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+
+.form input,
+.form textarea {
+  background: transparent;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+}
+
+.form textarea {
+  resize: none;
+}
+
+.form input:-webkit-autofill,
+.form input:-webkit-autofill:hover,
+.form input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #020617 inset;
+  -webkit-text-fill-color: white;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.bottom {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #64748b;
+  text-align: center;
+}
+
+.bottom a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.bottom a:hover {
+  text-decoration: underline;
+}
+
+body.light .contact-card {
+  background: white;
+}
+
+body.light .form input,
+body.light .form textarea {
+  color: black;
+}
+
+body.light .form input:-webkit-autofill,
+body.light .form input:-webkit-autofill:hover,
+body.light .form input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  -webkit-text-fill-color: black;
+}
+
+body.light .bottom a {
+  color: #0284c7;
+}

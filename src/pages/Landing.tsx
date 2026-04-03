@@ -1,8 +1,11 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import './Landing.css'
+import { useNavigate } from 'react-router-dom'
 
-const Landing = () => {
+const Landing: React.FC = () => {
+  const navigate = useNavigate()
+
   return (
     <div>
       <Header />
@@ -16,7 +19,9 @@ const Landing = () => {
           </p>
           <div className="hero-actions">
             <button className="cta-primary">Get Started</button>
-            <button className="cta-secondary">Learn More</button>
+            <button type="button" className="cta-secondary" onClick={() => navigate('/contact')}>
+              Contact
+            </button>
           </div>
         </div>
 

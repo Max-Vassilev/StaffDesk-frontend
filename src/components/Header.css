@@ -15,9 +15,15 @@
   border-bottom: 1px solid #1e293b;
 }
 
+.logo {
+  display: inline-block;
+}
+
 .logo h2 {
   font-size: 20px;
   font-weight: 700;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .nav {
