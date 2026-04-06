@@ -91,8 +91,22 @@ body.light .subtitle {
 }
 
 @media (max-width: 480px) {
-  .signup-page { padding: 0 20px; }
-  .signup-card { padding: 18px 14px; }
-  .form input { padding: 8px; }
-  .cta-primary, .google { padding: 8px; }
+  .signup-page {
+    align-items: flex-start;
+    padding: 40px 20px;
+    min-height: auto;
+  }
+
+  .signup-card {
+    padding: 18px 14px;
+  }
+
+  .form input {
+    padding: 8px;
+  }
+
+  .cta-primary,
+  .google {
+    padding: 8px;
+  }
 }
