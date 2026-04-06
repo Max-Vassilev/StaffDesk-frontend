@@ -1,10 +1,8 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import './Landing.css'
-import { useNavigate } from 'react-router-dom'
 
 const Landing: React.FC = () => {
-  const navigate = useNavigate()
 
   return (
     <div>
