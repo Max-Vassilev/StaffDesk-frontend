@@ -80,21 +80,6 @@ body.light .hero-left p {
   font-family: inherit;
 }
 
-.cta-secondary {
-  background: #1e293b;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 10px;
-  color: #e2e8f0;
-  cursor: pointer;
-  font-family: inherit;
-}
-
-body.light .cta-secondary {
-  background: #bfc9d6;
-  color: #1e293b;
-}
-
 .hero-right {
   flex: 1;
   display: flex;

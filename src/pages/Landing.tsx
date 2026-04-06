@@ -19,9 +19,6 @@ const Landing: React.FC = () => {
           </p>
           <div className="hero-actions">
             <button className="cta-primary">Get Started</button>
-            <button type="button" className="cta-secondary" onClick={() => navigate('/contact')}>
-              Contact
-            </button>
           </div>
         </div>
 

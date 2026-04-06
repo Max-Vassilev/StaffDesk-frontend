@@ -1,23 +1,21 @@
 .signup-wrapper {
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 
 .signup-page {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  min-height: calc(100dvh - 140px);
+  padding: 0 12px;
 }
 
 .signup-card {
   width: 100%;
-  max-width: 420px;
-  padding: 24px;
-  border-radius: 20px;
+  max-width: 380px;
+  padding: 24px 18px;
+  border-radius: 16px;
   background: #020617;
   border: 1px solid #1e293b;
   text-align: center;
@@ -34,8 +32,14 @@ body.light .signup-card {
   color: #1e293b;
 }
 
+.signup-card h2 {
+  margin-bottom: 6px;
+  font-size: 20px;
+}
+
 .subtitle {
-  margin: 12px 0 16px;
+  margin: 6px 0 12px;
+  font-size: 13px;
   color: #94a3b8;
 }
 
@@ -44,17 +48,18 @@ body.light .subtitle {
 }
 
 .form input {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 14px;
 }
 
 .cta-primary {
-  margin-top: 8px;
+  margin-top: 6px;
+  padding: 10px;
 }
 
 .divider {
-  margin: 16px 0;
-  text-align: center;
-  color: #64748b;
+  margin: 12px 0;
   position: relative;
 }
 
@@ -63,31 +68,31 @@ body.light .subtitle {
   content: "";
   position: absolute;
   top: 50%;
-  width: 40%;
+  width: 38%;
   height: 1px;
   background: #334155;
 }
 
-.divider::before {
-  left: 0;
-}
-
-.divider::after {
-  right: 0;
-}
+.divider::before { left: 0; }
+.divider::after { right: 0; }
 
 .google {
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   border-radius: 10px;
   border: 1px solid #1e293b;
   background: #ffffff;
   color: #1e293b;
-  font-weight: 500;
-  cursor: pointer;
-  transition: 0.2s;
 }
 
-.google:hover {
-  background: #f1f5f9;
+.bottom {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+@media (max-width: 480px) {
+  .signup-page { padding: 0 20px; }
+  .signup-card { padding: 18px 14px; }
+  .form input { padding: 8px; }
+  .cta-primary, .google { padding: 8px; }
 }

@@ -15,7 +15,6 @@ const Signup: React.FC = () => {
           </p>
 
           <div className="form">
-            <input placeholder="Your name (optional)" />
             <input placeholder="your@email.com" />
             <input placeholder="Password" type="password" />
             <input placeholder="Confirm password" type="password" />
@@ -23,9 +22,9 @@ const Signup: React.FC = () => {
             <button className="cta-primary">Create Account</button>
           </div>
 
-          <div className="divider">or</div>
+          {/* <div className="divider">or</div>
 
-          <button className="google">Continue with Google</button>
+          <button className="google">Continue with Google</button> */}
 
           <p className="bottom">
             Already have an account? <a href="#">Sign in</a>

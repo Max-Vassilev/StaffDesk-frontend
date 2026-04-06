@@ -20,7 +20,6 @@ const Header: React.FC = () => {
       </div>
 
       <div className="nav">
-        <button className="link">Articles</button>
 
         <div className={`switch ${dark ? 'dark' : 'light'}`} onClick={() => setDark(!dark)}>
           <div className="track">
