@@ -132,9 +132,8 @@ body.light .bottom a {
 
 @media (max-width: 480px) {
   .contact {
-    align-items: flex-start;
-    padding: 40px 20px;
-    min-height: auto;
+    align-items: center;
+    padding: 20px;
   }
 
   .contact-card {

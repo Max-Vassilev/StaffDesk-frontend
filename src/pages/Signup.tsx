@@ -1,13 +1,8 @@
-import { useLayoutEffect } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import './Signup.css'
 
 const Signup: React.FC = () => {
-  useLayoutEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
-  }, [])
-
   return (
     <div className="signup-wrapper">
       <Header />
@@ -26,6 +21,10 @@ const Signup: React.FC = () => {
 
             <button className="cta-primary">Create Account</button>
           </div>
+
+          <div className="divider">or</div>
+
+          <button className="google">Continue with Google</button>
 
           <p className="bottom">
             Already have an account? <a href="#">Sign in</a>

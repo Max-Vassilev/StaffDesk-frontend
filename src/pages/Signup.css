@@ -1,13 +1,14 @@
 .signup-wrapper {
   display: flex;
   flex-direction: column;
+  min-height: 100dvh;
 }
 
 .signup-page {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100dvh - 140px);
+  flex: 1;
   padding: 0 12px;
 }
 
@@ -92,9 +93,8 @@ body.light .subtitle {
 
 @media (max-width: 480px) {
   .signup-page {
-    align-items: flex-start;
-    padding: 40px 20px;
-    min-height: auto;
+    align-items: center;
+    padding: 20px;
   }
 
   .signup-card {
