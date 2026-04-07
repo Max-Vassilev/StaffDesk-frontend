@@ -1,14 +1,8 @@
-.signup-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100dvh;
-}
-
 .signup-page {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
+  min-height: calc(100dvh - 140px);
   padding: 0 12px;
 }
 
@@ -17,13 +11,13 @@
   max-width: 380px;
   padding: 24px 18px;
   border-radius: 16px;
-  background: #020617;
-  border: 1px solid #1e293b;
   text-align: center;
 }
 
 body.dark .signup-card {
   background: #0f172a;
+  border: 1px solid #1e293b;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
 }
 
 body.light .signup-card {
