@@ -57,7 +57,7 @@ body.light .contact .subtitle {
   box-sizing: border-box;
   border-radius: 10px;
   padding: 10px;
-  font-size: 14px;
+  font-size: 16px;
   transition: 0.2s;
 }
 
@@ -149,6 +149,7 @@ body.light .bottom a {
   .form input,
   .form textarea {
     padding: 8px;
+    font-size: 16px;
   }
 
   .form .cta-primary {
