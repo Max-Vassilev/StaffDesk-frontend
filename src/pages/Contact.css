@@ -132,7 +132,7 @@ body.light .bottom a {
 
 @media (max-width: 480px) {
   .contact {
-    align-items: center;
+    align-items: flex-start;
     padding: 20px;
   }
 
