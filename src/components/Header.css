@@ -40,7 +40,7 @@
   font-size: 15px;
 }
 
-.signup {
+.signin {
   background: #0ea5e9;
   border: none;
   padding: 8px 14px;
@@ -115,7 +115,7 @@ body.light .link {
   color: #1e293b;
 }
 
-body.light .signup {
+body.light .signin {
   background: #0284c7;
 }
 

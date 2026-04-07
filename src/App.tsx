@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import Landing from './pages/Landing'
 import Contact from './pages/Contact'
 import Signup from './pages/Signup'
+import Signin from './pages/Signin'
 
 const ScrollToTop: React.FC = () => {
   const { pathname } = useLocation()
@@ -22,6 +23,7 @@ const App: React.FC = () => {
         <Route path="/" element={<Landing />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/signin" element={<Signin />} />
       </Routes>
     </>
   )

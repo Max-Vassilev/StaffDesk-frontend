@@ -3,7 +3,6 @@ import Footer from '../components/Footer'
 import './Landing.css'
 
 const Landing: React.FC = () => {
-
   return (
     <div>
       <Header />
@@ -15,9 +14,7 @@ const Landing: React.FC = () => {
           <p>
             Monitor workforce growth, manage timelines, and automate key events with clarity.
           </p>
-          <div className="hero-actions">
-            <button className="cta-primary">Get Started</button>
-          </div>
+          <button className="cta-primary">Get Started</button>
         </div>
 
         <div className="hero-right">

@@ -20,7 +20,6 @@ const Header: React.FC = () => {
       </div>
 
       <div className="nav">
-
         <div className={`switch ${dark ? 'dark' : 'light'}`} onClick={() => setDark(!dark)}>
           <div className="track">
             <div className="thumb">
@@ -29,8 +28,8 @@ const Header: React.FC = () => {
           </div>
         </div>
 
-        <button className="signup" onClick={() => navigate('/signup')}>
-          Sign Up
+        <button className="signin" onClick={() => navigate('/signin')}>
+          Sign In
         </button>
       </div>
     </header>
