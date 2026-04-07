@@ -3,16 +3,15 @@
   justify-content: center;
   align-items: center;
   min-height: calc(100dvh - 140px);
-  padding: 20px;
+  padding: 0 12px;
 }
 
 .signup-card {
   width: 100%;
   max-width: 380px;
-  padding: 24px;
+  padding: 26px 22px;
   border-radius: 16px;
   text-align: center;
-  box-sizing: border-box;
 }
 
 body.dark .signup-card {
@@ -35,13 +34,11 @@ body.light .signup-card {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 100%;
 }
 
 .signup-form input {
-  width: 100%;
-  box-sizing: border-box;
   padding: 10px;
+  width: 100%;
   font-size: 16px;
   border-radius: 8px;
   border: 1px solid #1e293b;
@@ -57,11 +54,11 @@ body.light .signup-form input {
 .signup-button,
 .signup-google {
   width: 100%;
-  box-sizing: border-box;
   padding: 10px;
   border-radius: 10px;
   border: none;
   font-weight: 600;
+  font-size: 14px;
 }
 
 .signup-button {
