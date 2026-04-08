@@ -69,7 +69,7 @@ const Landing: React.FC = () => {
       </section>
 
       <section className="section">
-        <h2>Start Tracking Your Hiring</h2>
+        <h2>Track Your Hiring</h2>
         <p className="text">
           Organize positions, define custom interview stages, and evaluate candidates in one place.
         </p>
