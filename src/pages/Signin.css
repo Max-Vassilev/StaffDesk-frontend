@@ -54,24 +54,28 @@ body.light .signin-form input {
 
 .signin-button,
 .signin-google {
-  width: 100%;
+  width: 55%;
   padding: 10px;
   border-radius: 10px;
   border: none;
   font-weight: 600;
   font-size: 14px;
   box-sizing: border-box;
+  cursor: pointer;
+  align-self: center;
 }
 
 .signin-button {
   background: #0ea5e9;
   color: white;
+  margin-top: 12px;
 }
 
 .signin-google {
   background: #ffffff;
   color: #1e293b;
   border: 1px solid #1e293b;
+  margin-top: 6px;
 }
 
 .signin-divider {

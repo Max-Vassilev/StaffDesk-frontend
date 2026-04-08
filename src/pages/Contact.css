@@ -55,8 +55,8 @@ body.light .form textarea {
   color: #000;
 }
 
-.cta-primary {
-  width: 100%;
+.cta-contact {
+  width: 55%;
   padding: 10px;
   border-radius: 10px;
   border: none;
@@ -64,11 +64,18 @@ body.light .form textarea {
   font-size: 14px;
   background: #0ea5e9;
   color: white;
-  box-sizing: border-box;
+  align-self: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+body.light .cta-contact {
+  background: #0284c7;
 }
 
 .bottom {
-  margin-top: 12px;
+  margin-top: 14px;
+  margin-bottom: 0;
   font-size: 13px;
 }
 

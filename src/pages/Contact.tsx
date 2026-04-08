@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
             <input placeholder="your@email.com" />
             <input placeholder="Subject" />
             <textarea placeholder="Tell us how we can help..." rows={5} />
-            <button className="cta-primary">Send Message</button>
+            <button className="cta-contact">Send Message</button>
           </div>
 
           <p className="bottom">
