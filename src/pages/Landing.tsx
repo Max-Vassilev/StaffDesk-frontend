@@ -17,9 +17,6 @@ const Landing: React.FC = () => {
           <p>
             Manage candidates, custom interview stages, and decisions in one simple board.
           </p>
-          <button className="cta-landing" onClick={() => navigate('/signup')}>
-            Create an Account
-          </button>
         </div>
 
         <div className="hero-right">
