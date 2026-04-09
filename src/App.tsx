@@ -5,6 +5,7 @@ import Contact from './pages/Contact'
 import Signup from './pages/Signup'
 import Signin from './pages/Signin'
 import Home from './pages/Home'
+import Profile from './pages/Profile'
 
 const ScrollToTop: React.FC = () => {
   const { pathname } = useLocation()
@@ -37,6 +38,7 @@ const App: React.FC = () => {
         <Route path="/signup" element={isAuth ? <Navigate to="/home" /> : <Signup />} />
         <Route path="/signin" element={isAuth ? <Navigate to="/home" /> : <Signin />} />
         <Route path="/home" element={isAuth ? <Home /> : <Navigate to="/signin" />} />
+        <Route path="/profile" element={isAuth ? <Profile /> : <Navigate to="/signin" />} />
       </Routes>
     </>
   )

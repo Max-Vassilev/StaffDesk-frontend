@@ -1,0 +1,55 @@
+.profile-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 80px auto 40px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  margin-bottom: 40px;
+}
+
+.block {
+  margin-bottom: 40px;
+}
+
+.profile-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.logout {
+  margin: 30px 0;
+  color: #ef4444;
+  cursor: pointer;
+}
+
+.danger {
+  border: 1px solid #ef4444;
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+.danger button {
+  margin-top: 10px;
+  background: #ef4444;
+  border: none;
+  padding: 10px 16px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}

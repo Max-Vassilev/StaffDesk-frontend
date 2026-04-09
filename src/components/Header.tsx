@@ -7,6 +7,7 @@ const Header: React.FC = () => {
     return localStorage.getItem('theme') === 'light' ? false : true
   })
   const [isAuth, setIsAuth] = useState<boolean>(false)
+  const [email, setEmail] = useState<string | null>(null)
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -15,14 +16,19 @@ const Header: React.FC = () => {
   }, [dark])
 
   useEffect(() => {
-    setIsAuth(!!localStorage.getItem('token'))
-  }, [])
+    const token = localStorage.getItem('token')
+    setIsAuth(!!token)
 
-  const handleLogout = () => {
-    localStorage.removeItem('token')
-    setIsAuth(false)
-    window.location.href = '/'
-  }
+    if (token) {
+      fetch('http://localhost:8000/home', {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
+        .then(res => res.json())
+        .then(data => setEmail(data.email))
+    }
+  }, [])
 
   return (
     <header className="header">
@@ -40,9 +46,10 @@ const Header: React.FC = () => {
         </div>
 
         {isAuth ? (
-          <button className="signin" onClick={handleLogout}>
-            Logout
-          </button>
+          <div className="user" onClick={() => navigate('/profile')}>
+            <img src="https://cdn.vectorstock.com/i/500p/29/52/faceless-male-avatar-in-hoodie-vector-56412952.jpg" />
+            <span>{email}</span>
+          </div>
         ) : (
           <button className="signin" onClick={() => navigate('/signin')}>
             Sign In

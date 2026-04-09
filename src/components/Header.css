@@ -5,31 +5,35 @@
   right: 0;
   box-sizing: border-box;
   width: 100%;
+  height: 9vh;
   z-index: 1000;
   backdrop-filter: blur(10px);
   background: rgba(2, 6, 23, 0.9);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 24px;
+  padding: 0 20px;
   border-bottom: 1px solid #1e293b;
 }
 
 .logo {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .logo h2 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   cursor: pointer;
-  display: inline-block;
+  margin: 0;
 }
 
 .nav {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
+  height: 100%;
 }
 
 .link {
@@ -51,13 +55,34 @@
   font-size: 14px;
 }
 
-.switch {
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   cursor: pointer;
 }
 
+.user img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user span {
+  font-size: 14px;
+  color: #fff;
+}
+
+.switch {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
 .track {
-  width: 38px;
-  height: 18px;
+  width: 34px;
+  height: 16px;
   border-radius: 999px;
   background: #334155;
   border: 2px solid #22d3ee;
@@ -81,8 +106,8 @@
 }
 
 .icon {
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background: #020617;
 }
@@ -121,4 +146,8 @@ body.light .signin {
 
 body.light .track {
   background: #8b97a8;
+}
+
+body.light .user span {
+  color: #111;
 }
