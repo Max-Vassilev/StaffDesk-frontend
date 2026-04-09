@@ -17,7 +17,7 @@ const Home: React.FC = () => {
   }, [])
 
   return (
-    <div>
+    <div className="page">
       <Header />
 
       <div className="home-container">
