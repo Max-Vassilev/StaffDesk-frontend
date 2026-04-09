@@ -1,9 +1,31 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import './Signup.css'
 
 const Signup: React.FC = () => {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [confirm, setConfirm] = useState('')
+
+  const handleSignup = async () => {
+    if (password !== confirm) return alert('Passwords mismatch')
+
+    const res = await fetch('http://localhost:8000/register', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, password }),
+    })
+
+    if (!res.ok) {
+      const data = await res.json()
+      return alert(data.detail)
+    }
+
+    window.location.href = '/signin'
+  }
+
   return (
     <div className="signup-wrapper">
       <Header />
@@ -12,15 +34,31 @@ const Signup: React.FC = () => {
         <div className="signup-card">
           <h2>Create Account</h2>
           <p className="signup-subtitle">
-            Sign up to manage your employees and track your team growth.
+            Create your account to get started.
           </p>
 
           <div className="signup-form">
-            <input placeholder="your@email.com" />
-            <input placeholder="Password" type="password" />
-            <input placeholder="Confirm password" type="password" />
+            <input
+              placeholder="your@email.com"
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+            />
+            <input
+              placeholder="Password"
+              type="password"
+              value={password}
+              onChange={e => setPassword(e.target.value)}
+            />
+            <input
+              placeholder="Confirm Password"
+              type="password"
+              value={confirm}
+              onChange={e => setConfirm(e.target.value)}
+            />
 
-            <button className="signup-button">Create Account</button>
+            <button className="signup-button" onClick={handleSignup}>
+              Create Account
+            </button>
           </div>
 
           <div className="signup-divider">or</div>
