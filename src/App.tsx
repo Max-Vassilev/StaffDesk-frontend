@@ -33,7 +33,7 @@ const App: React.FC = () => {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={isAuth ? <Navigate to="/home" /> : <Landing />} />
-        <Route path="/contact" element={isAuth ? <Navigate to="/home" /> : <Contact />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/signup" element={isAuth ? <Navigate to="/home" /> : <Signup />} />
         <Route path="/signin" element={isAuth ? <Navigate to="/home" /> : <Signin />} />
         <Route path="/home" element={isAuth ? <Home /> : <Navigate to="/signin" />} />
