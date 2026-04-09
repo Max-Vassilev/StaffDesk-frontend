@@ -18,12 +18,13 @@ const Signup: React.FC = () => {
       body: JSON.stringify({ email, password }),
     })
 
-    if (!res.ok) {
-      const data = await res.json()
-      return alert(data.detail)
-    }
+    const data = await res.json()
 
-    window.location.href = '/signin'
+    if (!res.ok) return alert(data.detail)
+
+    localStorage.setItem('token', data.access_token)
+
+    window.location.href = '/home'
   }
 
   return (
